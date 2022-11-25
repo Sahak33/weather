@@ -1,1 +1,1 @@
-export const WEATHER = (lat, lon) => `${process.env.NEXT_PUBLIC_BASE_URL}lat=${lat}&lon=${lon}&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`
+export const WEATHER = (lat, lon) => `${process.env.NEXT_PUBLIC_BASE_URL || 'https://api.openweathermap.org/data/2.5/forecast?'}lat=${lat}&lon=${lon}&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY || '267aa2573ca91061a6bcbdb1574d82b4'}`
