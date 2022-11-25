@@ -1,0 +1,1 @@
+export const WEATHER = (lat, lon) => `${process.env.NEXT_PUBLIC_BASE_URL}lat=${lat}&lon=${lon}&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}`
